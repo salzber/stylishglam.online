@@ -16,7 +16,7 @@
         Free Express Shipping on Orders Over ₹1999 | Redefining Women's Elegance
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation (Links restored to working state) -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-extrabold text-blue-950 tracking-wider">STYLISHGLAM</h1>
@@ -43,9 +43,10 @@
             <p class="text-lg md:text-xl mb-8 max-w-lg">
                 Immerse yourself in our exclusive collection of premium women's wear, crafted with precision for the modern, confident woman.
             </p>
-            <button class="bg-white text-blue-950 px-10 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition-all">
+            <!-- Changed to DIV instead of BUTTON, behaves safely as a visual element only -->
+            <div class="inline-block cursor-default bg-white text-blue-950 px-10 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition-all">
                 Shop the Collection
-            </button>
+            </div>
         </div>
     </header>
 
@@ -69,14 +70,14 @@
     <section id="categories" class="max-w-7xl mx-auto p-8 mt-8">
         <h2 class="text-3xl font-bold mb-8 text-center text-blue-950">Shop by Category</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="group overflow-hidden rounded-lg shadow cursor-pointer relative h-64 md:h-80">
+            <div class="group overflow-hidden rounded-lg shadow relative h-64 md:h-80">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                     src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d" alt="Dresses" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
                     <h3 class="text-white text-xl font-semibold">Evening Gowns</h3>
                 </div>
             </div>
-            <div class="group overflow-hidden rounded-lg shadow cursor-pointer relative h-64 md:h-80">
+            <div class="group overflow-hidden rounded-lg shadow relative h-64 md:h-80">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                     src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQtQoX1Z06WdC1fTM8nIr5OU9MT3-DUCm7ZrCK25IoQhjY_TCWVB11ObEyjwxz-VBLqtzYvHEELnUGKroxwnXo2ghnKhJak-t0QsKE4AYe_Q8zB6tI95EaZ_A"
                     alt="Workwear" />
@@ -84,14 +85,14 @@
                     <h3 class="text-white text-xl font-semibold">Power Workwear</h3>
                 </div>
             </div>
-            <div class="group overflow-hidden rounded-lg shadow cursor-pointer relative h-64 md:h-80">
+            <div class="group overflow-hidden rounded-lg shadow relative h-64 md:h-80">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                     src="https://images.unsplash.com/photo-1496747611176-843222e1e57c" alt="Casuals" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
                     <h3 class="text-white text-xl font-semibold">Chic Casuals</h3>
                 </div>
             </div>
-            <div class="group overflow-hidden rounded-lg shadow cursor-pointer relative h-64 md:h-80">
+            <div class="group overflow-hidden rounded-lg shadow relative h-64 md:h-80">
                 <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                     src="https://images.unsplash.com/photo-1550639525-c97d455acf70" alt="Tops" />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
@@ -130,9 +131,10 @@
                 <div class="flex">
                     <input type="email" class="p-3 w-full rounded-l text-black focus:outline-none"
                         placeholder="Enter your email address" />
-                    <button class="bg-white text-blue-950 font-bold px-4 py-3 rounded-r border-l border-gray-300 hover:bg-gray-100">
+                    <!-- Changed to DIV instead of BUTTON -->
+                    <div class="bg-white text-blue-950 font-bold px-4 py-3 rounded-r border-l border-gray-300 hover:bg-gray-100 flex items-center justify-center cursor-default">
                         Subscribe
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,9 +161,10 @@
                     </div>
                     <h3 class='text-lg font-semibold text-slate-800'>${p.name}</h3>
                     <p class='text-blue-900 font-bold mt-1 text-xl'>₹${p.price}</p>
-                    <button class='bg-blue-900 hover:bg-blue-950 text-white font-medium w-full mt-4 py-3 rounded-lg transition'>
+                    <!-- Changed to DIV instead of BUTTON -->
+                    <div class='bg-blue-900 hover:bg-blue-950 text-white font-medium w-full mt-4 py-3 rounded-lg transition text-center cursor-default'>
                         Add to Bag
-                    </button>
+                    </div>
                 </div>`;
             });
         }
@@ -170,4 +173,4 @@
     </script>
 </body>
 
-</html> 
+</html>
