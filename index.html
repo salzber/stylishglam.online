@@ -6,19 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stylishglam – Premium Women's Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-<script src="https://cdn.visitors.now/v.js" data-token="5fb9b946-34dc-4320-936b-1e63baf646ff"></script>
-
+    <script src="https://cdn.visitors.now/v.js" data-token="1197a43e-4711-4007-a521-4e5c4e30b717"></script>
 </head>
 
-<body class="bg-gray-50 text-slate-900 font-sans">
+<body class="bg-gray-50 text-slate-900 font-sans relative">
+
+    <!-- ================= COOKIE POP-UP ================= -->
+    <div id="cookiePopup" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-md w-[90%] text-center border border-gray-100">
+            <div class="text-4xl mb-4">🍪</div>
+            <h3 class="text-2xl font-bold text-blue-950 mb-3">Cookie Consent</h3>
+            <p class="text-slate-600 mb-8 text-sm leading-relaxed">
+                We use cookies to improve your shopping experience, deliver personalized content, and analyze our traffic. Do you accept these cookies?
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!-- Accept Button -->
+                <a href="#"  
+                   class="bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-950 transition shadow-md w-full sm:w-auto">
+                    Accept Cookies
+                </a>
+                <!-- Decline Button -->
+                <a href="#"  
+                   class="bg-gray-100 text-slate-800 font-semibold py-3 px-6 rounded-lg hover:bg-gray-200 transition border border-gray-200 w-full sm:w-auto">
+                    Decline
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================= -->
 
     <!-- Top Banner -->
     <div class="bg-blue-950 text-white text-center py-2 text-sm tracking-wide">
         Free Express Shipping on Orders Over ₹1999 | Redefining Women's Elegance
     </div>
 
-    <!-- Navigation (Links restored to working state) -->
+    <!-- Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-extrabold text-blue-950 tracking-wider">STYLISHGLAM</h1>
@@ -45,7 +67,6 @@
             <p class="text-lg md:text-xl mb-8 max-w-lg">
                 Immerse yourself in our exclusive collection of premium women's wear, crafted with precision for the modern, confident woman.
             </p>
-            <!-- Changed to DIV instead of BUTTON, behaves safely as a visual element only -->
             <div class="inline-block cursor-default bg-white text-blue-950 px-10 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition-all">
                 Shop the Collection
             </div>
@@ -133,7 +154,6 @@
                 <div class="flex">
                     <input type="email" class="p-3 w-full rounded-l text-black focus:outline-none"
                         placeholder="Enter your email address" />
-                    <!-- Changed to DIV instead of BUTTON -->
                     <div class="bg-white text-blue-950 font-bold px-4 py-3 rounded-r border-l border-gray-300 hover:bg-gray-100 flex items-center justify-center cursor-default">
                         Subscribe
                     </div>
@@ -163,7 +183,6 @@
                     </div>
                     <h3 class='text-lg font-semibold text-slate-800'>${p.name}</h3>
                     <p class='text-blue-900 font-bold mt-1 text-xl'>₹${p.price}</p>
-                    <!-- Changed to DIV instead of BUTTON -->
                     <div class='bg-blue-900 hover:bg-blue-950 text-white font-medium w-full mt-4 py-3 rounded-lg transition text-center cursor-default'>
                         Add to Bag
                     </div>
